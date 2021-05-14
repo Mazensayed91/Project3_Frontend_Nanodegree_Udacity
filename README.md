@@ -1,10 +1,11 @@
 # Weather-Journal App Project
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+This project deals with the weather api, using zip code, you can get the current temperature.
 
 ## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
-
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+First you should have node installed in your device,
+* To run it you should clone the repo
+* Then install the dependancies using npm as follows:
+   - npm i cors body-parser express
+* Then run the server using: node server.js 
