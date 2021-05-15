@@ -2,12 +2,12 @@
 
 /* Global Variables */
 const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?zip=';
-const apiKey = '&APPID=a99947cad1fc2318badc6cdaa7bd2b03';
+const apiKey = '&APPID=a99947cad1fc2318badc6cdaa7bd2b03&units=imperial';
 
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = (d.getMonth()+1) +'.'+ d.getDate()+'.'+ d.getFullYear();
 
 // Add slot that will be triggered when the generate button is clicked
 document.getElementById('generate').addEventListener('click', () => {
@@ -47,7 +47,7 @@ const getData = async (baseURL, zip, key)=>{
 }
 
 
-// Function to update the project's data using /add endpoint
+// Function to update the project's data using /add
 const postData = async ( url = '', data = {})=>{
 
     const response = await fetch(url, 
